@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Social Media Management – Elisabeth Aubonney</title>
+<title>Marketing & Business automatisieren – Elisabeth Aubonney</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 :root {
@@ -209,6 +209,28 @@ h2 {
   margin-bottom: 8px;
 }
 .service-card p { font-size: 14px; color: var(--muted); }
+.service-card--cta {
+  display: block;
+  background: var(--purple);
+  color: white;
+  text-decoration: none;
+  position: relative;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.service-card--cta:hover { transform: translateY(-3px); box-shadow: 0 12px 32px rgba(45,27,105,0.25); }
+.service-card--cta .service-num { color: rgba(245,166,35,0.55); }
+.service-card--cta h3 { color: white; }
+.service-card--cta p { color: rgba(255,255,255,0.75); }
+.service-arrow {
+  position: absolute;
+  top: 24px; right: 24px;
+  width: 32px; height: 32px;
+  background: var(--orange);
+  color: var(--dark);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 600;
+}
 
 /* PROCESS */
 .process-steps {
@@ -361,8 +383,38 @@ h2 {
   transition: transform 0.2s, opacity 0.2s;
 }
 .cta-btn:hover { transform: translateY(-2px); opacity: 0.9; }
+.cta-trust {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  max-width: 760px;
+  margin: 40px auto 0;
+  padding: 0;
+  text-align: left;
+}
+.cta-trust li {
+  background: rgba(255,255,255,0.55);
+  border: 1px solid rgba(45,27,105,0.08);
+  border-radius: 14px;
+  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.cta-trust strong {
+  font-family: 'Playfair Display', serif;
+  font-size: 15px;
+  color: var(--purple);
+  font-weight: 600;
+}
+.cta-trust span {
+  font-size: 12.5px;
+  color: rgba(26,26,46,0.7);
+  line-height: 1.45;
+}
 .contact-info {
-  margin-top: 28px;
+  margin-top: 32px;
   display: flex; justify-content: center; gap: 32px; flex-wrap: wrap;
 }
 .contact-info a { color: var(--dark); font-size: 14px; text-decoration: none; }
@@ -394,8 +446,8 @@ footer {
   <div class="hero-inner">
     <div>
       <span class="hero-tag">Angebot 2026 · KMU</span>
-      <h1>Social Media<br>Management.<br><span>Professionell.</span></h1>
-      <p class="lead">Planbar. Ohne grossen Aufwand für Sie – dafür mit echten Ergebnissen.</p>
+      <h1>Marketing & Business<br>automatisieren.<br><span>Effizient.</span></h1>
+      <p class="lead">Wiederkehrende Prozesse schlank gemacht – damit Sie sich auf Ihre Kunden konzentrieren können, nicht auf Tools.</p>
       <div class="hero-stats">
         <div class="hero-stat">
           <div class="num">30–60'</div>
@@ -406,8 +458,8 @@ footer {
           <div class="lbl">Vorlauf für Kontrolle</div>
         </div>
         <div class="hero-stat">
-          <div class="num">1+</div>
-          <div class="lbl">Kanal inkl. FB</div>
+          <div class="num">4</div>
+          <div class="lbl">Bereiche · modular</div>
         </div>
       </div>
     </div>
@@ -420,8 +472,8 @@ footer {
 <section>
   <div class="container">
     <p class="section-tag">Die Herausforderung</p>
-    <h2>Womit kämpfen KMUs beim Thema Social Media?</h2>
-    <p class="section-lead">Zu wenig Zeit, zu wenig Strategie – und trotzdem soll der Instagram-Kanal wachsen.</p>
+    <h2>Womit kämpfen KMUs im Marketing & Daily Business?</h2>
+    <p class="section-lead">Zu wenig Zeit, zu wenig Strategie – und trotzdem sollen Sichtbarkeit, Kommunikation und interne Abläufe wachsen.</p>
     <div class="problem-grid">
       <div class="problem-card">
         <div class="problem-icon">⏱</div>
@@ -450,115 +502,55 @@ footer {
 <section class="services-bg">
   <div class="container">
     <p class="section-tag">Was ich leiste</p>
-    <h2>Von der Strategie bis zur Publikation</h2>
-    <p class="section-lead">Ich übernehme das komplette Social Media Management. Sie behalten die volle Kontrolle – mit minimalem Aufwand.</p>
+    <h2>Vier Bereiche – modular kombinierbar</h2>
+    <p class="section-lead">Konkrete Bausteine, die einzeln oder zusammen funktionieren. Jeder Baustein spart wiederkehrende Stunden im Alltag.</p>
     <div class="services-grid">
       <div class="service-card">
         <div class="service-num">01</div>
-        <h3>Strategie & Analyse</h3>
-        <p>Eine auf Ihr Unternehmen zugeschnittene Content-Strategie – mit Fokus auf Ihre Produkte, Marke und Zielgruppe.</p>
+        <h3>Landingpage bauen</h3>
+        <p>Eine fokussierte Seite für Kampagne, Event oder neues Angebot – sauber gestaltet, mobil optimiert und in wenigen Tagen live.</p>
       </div>
       <div class="service-card">
         <div class="service-num">02</div>
-        <h3>Redaktionsplanung</h3>
-        <p>Ein strukturierter Redaktionsplan sorgt für Kontinuität und Planbarkeit – Woche für Woche, Thema für Thema.</p>
+        <h3>Social Media Management</h3>
+        <p>Strategie, Redaktionsplan und fertige Posts zur Freigabe. Jeden Montag bereit – Sie behalten die Kontrolle bei minimalem Aufwand.</p>
       </div>
       <div class="service-card">
         <div class="service-num">03</div>
-        <h3>Fertige Posts</h3>
-        <p>Jeden Montag erhalten Sie fertige Posts zur Freigabe – Text, Bild und Hashtags bereits enthalten.</p>
+        <h3>Business Hub in Notion</h3>
+        <p>Ein zentrales Notion-Setup für Kunden, Projekte, Aufgaben und Wissen. Alles an einem Ort, klar strukturiert und sofort nutzbar.</p>
       </div>
       <div class="service-card">
         <div class="service-num">04</div>
-        <h3>KI-Automatisierung</h3>
-        <p>Mit KI-unterstützten Prozessen halte ich die Abläufe schlank und kosteneffizient – für Sie und für mich.</p>
+        <h3>Automatisierte E-Mail-Drafts</h3>
+        <p>KI generiert Antwort-Entwürfe direkt in Ihrem Postfach. Sie prüfen kurz, passen an und senden – Bearbeitungszeit deutlich reduziert.</p>
       </div>
+      <a href="#kontakt" class="service-card service-card--cta">
+        <div class="service-num">05</div>
+        <h3>Ihr Projekt – fragen Sie an</h3>
+        <p>Sie haben einen anderen Prozess, der schlanker laufen soll? Lassen Sie uns kurz sprechen – unverbindlich.</p>
+        <span class="service-arrow">→</span>
+      </a>
     </div>
   </div>
 </section>
 
-<section>
+<section id="kontakt" class="cta-section">
   <div class="container">
-    <p class="section-tag">Der Prozess</p>
-    <h2>Immer am Montag: Ihr fixer Rhythmus</h2>
-    <p class="section-lead">Kein Post ohne Ihre ausdrückliche Freigabe. Ihr Zeitaufwand: ca. 30–60 Minuten pro Woche.</p>
-    <div class="process-steps">
-      <div class="process-step">
-        <div class="step-num">1</div>
-        <h3>Montags checken</h3>
-        <p>Fertige Posts und neue Ideen sind bereit zur Ansicht.</p>
-      </div>
-      <div class="process-step">
-        <div class="step-num">2</div>
-        <h3>Ideen kommentieren</h3>
-        <p>Ideen der übernächsten Woche prüfen und bei Bedarf anpassen.</p>
-      </div>
-      <div class="process-step">
-        <div class="step-num">3</div>
-        <h3>Posts freigeben</h3>
-        <p>Beiträge der Folgewoche final abnehmen. Text, Bild, Hashtags: alles fertig.</p>
-      </div>
-      <div class="process-step">
-        <div class="step-num">4</div>
-        <h3>Publizieren</h3>
-        <p>Der Post wird zum eingeplanten Datum automatisch veröffentlicht.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section style="background: #FAFAF5;">
-  <div class="container">
-    <p class="section-tag">Investition</p>
-    <h2>Klare Preisstruktur, kein Kleingedrucktes</h2>
-    <p class="section-lead">Einführungsangebot für die ersten 5 Pilotkunden – monatlich kündbar.</p>
-    <div class="pricing-wrap">
-      <div class="price-card">
-        <p class="price-label">Einführungspreis</p>
-        <div class="price-amount">
-          <span class="price-currency">CHF</span> 600<span class="price-period">.–/Monat</span>
-        </div>
-        <p class="price-note">Für die ersten 5 Pilotkunden (3 Monate). Danach CHF 800.– / Monat.</p>
-        <ul class="price-includes">
-          <li>Initiale Strategie & Analyse</li>
-          <li>Laufender Redaktionsplan</li>
-          <li>Fertige Posts jede Woche</li>
-          <li>Freigabeprozess & Abstimmung</li>
-          <li>Keine Setup-Kosten</li>
-          <li>Instagram + Facebook inklusive</li>
-        </ul>
-      </div>
-      <div class="price-detail">
-        <h3>Auf einen Blick</h3>
-        <div class="detail-row">
-          <span class="label">Einführungspreis</span>
-          <span class="value orange">CHF 600.–</span>
-        </div>
-        <div class="detail-row">
-          <span class="label">Regulärer Preis (nach 3 Monaten)</span>
-          <span class="value">CHF 800.– / Monat</span>
-        </div>
-        <div class="detail-row">
-          <span class="label">Kanäle</span>
-          <span class="value">Instagram + Facebook</span>
-        </div>
-        <div class="detail-row">
-          <span class="label">TikTok</span>
-          <span class="value">Auf Anfrage</span>
-        </div>
-        <div class="detail-row">
-          <span class="label">Kündigung</span>
-          <span class="value">Monatlich, 30 Tage Vorankündigung</span>
-        </div>
-        <div class="detail-row">
-          <span class="label">Ihr Zeitaufwand</span>
-          <span class="value">30–60 Min. / Woche</span>
-        </div>
-        <div class="detail-row">
-          <span class="label">Vorlauf</span>
-          <span class="value">3 Wochen</span>
-        </div>
-      </div>
+    <p class="section-tag" style="color: var(--dark); opacity: 0.6;">Jetzt anfragen</p>
+    <h2>Unverbindliches Erstgespräch</h2>
+    <p>15 Minuten – kostenlos – keine Verpflichtung. Antwort innerhalb von 24 Stunden.</p>
+    <a href="https://calendly.com/elisabeth-aubonney/15min" class="cta-btn" target="_blank">Termin buchen →</a>
+    <ul class="cta-trust">
+      <li><strong>Pauschalpreise</strong><span>kein Stundenpoker, kein Kleingedrucktes</span></li>
+      <li><strong>Budget unter Kontrolle</strong><span>Sie wissen vorher, was Sie zahlen</span></li>
+      <li><strong>Alles aus einer Hand</strong><span>Strategie, Umsetzung und Tools – eine Ansprechperson</span></li>
+      <li><strong>Kein Overhead</strong><span>schlanke Prozesse, kein Agentur-Aufschlag</span></li>
+    </ul>
+    <div class="contact-info">
+      <a href="tel:0786111131">📞 078 611 11 31</a>
+      <a href="mailto:elisabeth.aubonney@gmail.com">✉️ elisabeth.aubonney@gmail.com</a>
+      <a href="https://www.linkedin.com/in/elisabethaubonney/" target="_blank">LinkedIn</a>
     </div>
   </div>
 </section>
@@ -580,22 +572,8 @@ footer {
   </div>
 </section>
 
-<section class="cta-section">
-  <div class="container">
-    <p class="section-tag" style="color: var(--dark); opacity: 0.6;">Jetzt anfragen</p>
-    <h2>Unverbindliches Erstgespräch</h2>
-    <p>15 Minuten – kostenlos – keine Verpflichtung. Antwort innerhalb von 24 Stunden.</p>
-    <a href="https://calendly.com/elisabeth-aubonney/15min" class="cta-btn" target="_blank">Termin buchen →</a>
-    <div class="contact-info">
-      <a href="tel:0786111131">📞 078 611 11 31</a>
-      <a href="mailto:elisabeth.aubonney@gmail.com">✉️ elisabeth.aubonney@gmail.com</a>
-      <a href="https://www.linkedin.com/in/elisabethaubonney/" target="_blank">LinkedIn</a>
-    </div>
-  </div>
-</section>
-
 <footer>
-  © 2026 Elisabeth Aubonney · Social Media & KI-Marketing · Zürich
+  © 2026 Elisabeth Aubonney · Marketing- & Business-Automation · Zürich
 </footer>
 
 </body>
